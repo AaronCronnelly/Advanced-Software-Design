@@ -5,7 +5,7 @@ import java.security.Key;
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 
-public abstract class SymmetricCypher extends AbstractCypher {
+public  class SymmetricCypher extends AbstractCypher {
 
 	private Key key;
 

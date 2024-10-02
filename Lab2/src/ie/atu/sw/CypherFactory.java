@@ -14,10 +14,10 @@ public class CypherFactory {
 	public Cypherable getCypher(CypherType type) throws Throwable {
 		
 		return switch (type) {
-		case DES -> new SymmetricCypher("DES", 56, "DES/ECB/PKCS5Padding");
-		case TripleDes -> new SymmetricCypher("DES", 56, "DESede/ECB/PKCS5Padding");
-		case RSA -> new RSACypher();
-		default -> new SymmetricCypher("AES", 128, "AES/ECB/PKCS5Padding");
+			case DES -> new SymmetricCypher("DES", 56, "DES/ECB/PKCS5Padding");
+			case TRIPLEDES -> new SymmetricCypher("DES", 56, "DESede/ECB/PKCS5Padding");
+			case RSA -> new RSACypher();
+			default -> new SymmetricCypher("AES", 128, "AES/ECB/PKCS5Padding");
 		};
 	}
 
