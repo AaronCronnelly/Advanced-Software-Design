@@ -11,9 +11,4 @@ public class Runner {
 		
 		
 		byte[] s = new String("HAPPY DAYS").getBytes("UTF-8");
-		byte[] t = cypher.encrypt(s);
-		
-		System.out.println(new String(t));
-		System.out.println(new String(cypher.decrypt(t)));
-	}
-}
+		byte[] t = cypher

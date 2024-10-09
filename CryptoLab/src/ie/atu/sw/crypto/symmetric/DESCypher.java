@@ -12,7 +12,4 @@ public class DESCypher extends AbstractCypher{
 		super.setCypher(Cipher.getInstance("DES/ECB/PKCS5Padding"));
 		
 		System.out.println(super.getKey().getAlgorithm());
-		System.out.println(super.getKey().getFormat());
-		System.out.println(super.getKey().getEncoded());
-	}
-}
+		System.out.println(super.getKey().getFormat());

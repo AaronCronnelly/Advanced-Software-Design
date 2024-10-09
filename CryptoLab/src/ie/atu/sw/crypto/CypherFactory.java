@@ -27,12 +27,4 @@ public class CypherFactory { // A singleton factory....
 		return switch(algo) {
 			case AES -> new AESCypher();
 			case DES -> new DESCypher();
-			case CAESAR, VIGENERE -> {
-				VigenereCypher vc =  new VigenereCypher();
-				vc.setKey("OBJECT ORIENTED SOFTWARE DEVELOPMENT");
-				yield vc;
-			}
-			case RSA -> new RSACypher();
-		};
-	}
-}
+			cas

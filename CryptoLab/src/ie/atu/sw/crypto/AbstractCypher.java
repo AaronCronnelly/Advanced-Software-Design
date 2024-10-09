@@ -36,5 +36,3 @@ public abstract class AbstractCypher implements Cypherable {
 
 	protected void setKey(Key useKey) {
 		this.key = useKey;
-	}
-}

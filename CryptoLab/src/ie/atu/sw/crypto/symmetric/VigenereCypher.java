@@ -138,9 +138,4 @@ public class VigenereCypher extends AbstractCypher{
 		public byte[] getEncoded() {
 			byte[] bytes = new byte[keyText.length]; 
 			for (int i = 0; i < keyText.length; i++) {
-				bytes[i] = (byte) keyText[i];
-			}
-			return bytes;
-		}
-	}
-}
+				by
