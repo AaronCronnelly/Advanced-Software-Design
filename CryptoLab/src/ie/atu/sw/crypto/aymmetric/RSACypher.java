@@ -27,4 +27,9 @@ public class RSACypher extends AbstractCypher {
 
 	protected void setKey(Key key) {
 		if (key instanceof PublicKey){
-			super.setKey(keyRing.getPrivate());
+			super.setKey(keyRing.getPrivate());
+		}else{
+			super.setKey(keyRing.getPublic());
+		}
+	}
+}
