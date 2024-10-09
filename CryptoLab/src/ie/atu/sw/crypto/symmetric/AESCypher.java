@@ -9,6 +9,4 @@ public class AESCypher extends AbstractCypher{
 		KeyGenerator keyGen = KeyGenerator.getInstance("AES");
 		keyGen.init(128);
 		super.setKey(keyGen.generateKey());
-		super.setCypher(Cipher.getInstance("AES/ECB/PKCS5Padding"));
-	}
-}
+		super.set
