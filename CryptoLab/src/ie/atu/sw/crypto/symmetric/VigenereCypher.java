@@ -1,4 +1,4 @@
-package ie.atu.sw;
+package ie.atu.sw.crypto.symmetric;
 
 import java.security.Key;
 

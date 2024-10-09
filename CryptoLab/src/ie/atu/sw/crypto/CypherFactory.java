@@ -1,5 +1,9 @@
 package ie.atu.sw.crypto;
 
+import ie.atu.sw.crypto.aymmetric.RSACypher;
+import ie.atu.sw.crypto.symmetric.AESCypher;
+import ie.atu.sw.crypto.symmetric.DESCypher;
+import ie.atu.sw.crypto.symmetric.VigenereCypher;
 public class CypherFactory { // A singleton factory....
 	//The static class field can see the private constructor
 	private static CypherFactory fact = new CypherFactory();
